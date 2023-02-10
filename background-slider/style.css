@@ -19,7 +19,7 @@ body {
 }
 
 body::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -46,6 +46,7 @@ body::before {
     position: absolute;
     top: -15vh;
     left: -15vw;
+    transition: 0.4s ease;
     z-index: 1;
 }
 
@@ -61,7 +62,7 @@ body::before {
     font-size: 30px;
     border: 2px solid orange;
     top: 50%;
-    transform: translate(-50%);
+    transform: translateY(-50%);
     cursor: pointer;
 }
 
