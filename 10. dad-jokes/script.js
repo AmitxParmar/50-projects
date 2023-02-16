@@ -1,12 +1,9 @@
-const jokeEl = document.getElementById('joke');
-const jokeBtn = document.getElementById('jokeBtn');
-
+const jokeEl = document.getElementById('joke')
+const jokeBtn = document.getElementById('jokeBtn')
 
 jokeBtn.addEventListener('click', generateJoke)
 
-generateJoke();
-
-// Using Async Await
+generateJoke()
 
 async function generateJoke() {
     const config = {
@@ -16,6 +13,7 @@ async function generateJoke() {
     }
 
     const res = await fetch('https://icanhazdadjoke.com', config)
+
     const data = await res.json()
 
     jokeEl.innerHTML = data.joke
